@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/atlas-site-dist/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Gravito Atlas - Structuring Chaos</title>
-    <!-- Trigger Deploy: 2026-01-01 -->
+    <!-- Trigger Deploy: 2026-01-01 v2 (Fix Base Path) -->
     <meta name="description"
         content="Atlas is a Bun-native, high-performance ORM for high-availability systems. Structure your database chaos with sub-millisecond execution." />
 
@@ -40,7 +40,7 @@
             var query = params.get('q');
             var hash = params.get('h');
             if (path) {
-                var base = '/atlas-site-dist/';
+                var base = '/';
                 var next = base + path.replace(/^\//, '');
                 if (query && query !== '?') {
                     next += query;
@@ -52,8 +52,8 @@
             }
         })();
     </script>
-  <script type="module" crossorigin src="/atlas-site-dist/assets/index-CYye1fro.js"></script>
-  <link rel="stylesheet" crossorigin href="/atlas-site-dist/assets/index-Cftq9vDQ.css">
+  <script type="module" crossorigin src="/assets/index-xgmCLaAO.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Cftq9vDQ.css">
 </head>
 
 <body
