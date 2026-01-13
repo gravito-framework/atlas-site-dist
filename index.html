@@ -52,11 +52,10 @@
     </script>
     
     <!-- Google Analytics (Safe Injection) -->
-    <!--
     <script>
         // Check if env variable exists effectively during build/runtime
-        var gaId = import.meta.env ? import.meta.env.VITE_GA_MEASUREMENT_ID : '';
-        if (gaId && gaId.startsWith('G-')) {
+        var gaId = '';
+        if (gaId && gaId.startsWith('G-') && gaId !== '') {
             var script = document.createElement('script');
             script.async = true;
             script.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
@@ -68,7 +67,6 @@
             gtag('config', gaId);
         }
     </script>
-    -->
   <script type="module" crossorigin src="/assets/index-wLRUVzNU.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-BAssa-Uz.css">
 </head>
